@@ -1,0 +1,33 @@
+# Python cache files
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+.env/
+venv/
+
+# Pipenv files
+Pipfile.lock
+
+# IDEs and editors
+.vscode/
+.idea/
+
+# Database
+*.db
+
+# Byte-compiled / optimized / DLL files
+*.pyc
+*.pyo
+*.pyd
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+
+# Logs
+*.log
+
+# OS generated files
+.DS_Store

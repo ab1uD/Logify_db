@@ -1,4 +1,4 @@
-from seed import (
+from .seed import (
     create_user, get_all_users, update_user, delete_user,
     create_animal, get_all_animals, update_animal, delete_animal,
     create_sighting, get_all_sightings, update_sighting, delete_sighting,

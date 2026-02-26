@@ -1,9 +1,9 @@
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
-from models import Animal, Sighting, User, Feedback
+from .models import Animal, Sighting, User, Feedback
 
 
-DATABASE_URL = "sqlite:////home/abiud/Development/code/phase-3/Logify_db/lib/db/animals.db"
+DATABASE_URL = "sqlite:////home/abiud/Development/code/phase-3/Logify_db/backend/db/animals.db"
 engine = create_engine(DATABASE_URL)
 SessionLocal = sessionmaker(bind=engine)
 
