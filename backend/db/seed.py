@@ -17,13 +17,14 @@ def create_user(username, email, password):
     db.commit()
     db.refresh(user)
     db.close()
+    return user
 
 
 def get_all_users():
     db = SessionLocal()
     users = db.query(User).all()
     db.close()
-    print(users)
+    return users
 
 
 def update_user(id, username, email, password):
@@ -55,13 +56,14 @@ def create_animal(animal_name, gender):
     db.commit()
     db.refresh(animal)
     db.close()
+    return animal
 
 
 def get_all_animals():
     db = SessionLocal()
     animals = db.query(Animal).all()
     db.close()
-    print(animals)
+    return animals
 
 
 def update_animal(id, animal_name, gender):
@@ -98,13 +100,14 @@ def create_sighting(user_id, animal_id, description, location, age_estimate):
     db.commit()
     db.refresh(sighting)
     db.close()
+    return sighting
 
 
 def get_all_sightings():
     db = SessionLocal()
     sightings = db.query(Sighting).all()
     db.close()
-    print(sightings)
+    return sightings
 
 
 def update_sighting(id, user_id, animal_id, description, location, age_estimate):
@@ -138,13 +141,14 @@ def create_feedback(sighting_id, message):
     db.commit()
     db.refresh(feedback)
     db.close()
+    return feedback
 
 
 def get_all_feedback():
     db = SessionLocal()
     feedback = db.query(Feedback).all()
     db.close()
-    print(feedback)
+    return feedback
 
 
 def update_feedback(id, sighting_id, message):
